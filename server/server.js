@@ -47,11 +47,6 @@ app.get('/todos/:id', (req, res) => {
     }).catch((e) => {
         res.status(400).send();
     });
-
-    //findById
-    //success if todo - send it back
-    // if no todo - send back 404 with an empty body
-    // or error (400 - send nothing)
 });
 
 app.delete('/todos/:id', (req, res) => {
@@ -66,7 +61,7 @@ app.delete('/todos/:id', (req, res) => {
            return res.status(404).send();
        }
 
-       res.send(todo);
+       res.send({todo});
     }).catch((e) => res.status(400).send());
 });
 
