@@ -1,4 +1,5 @@
 node_modules/
+server/config/config.json
 node-todo-api.iml
 node-todo-api.ipr
 node-todo-api.iws
